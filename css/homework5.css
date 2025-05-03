@@ -1,135 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap');
+html{background-color: turquoise;}
 
-@import "reset.css";
-@import "variables.css";
-
-
-img{
-    width: 100px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.top-bar{
+body{    
     display: flex;
-    justify-content: space-between;
-    align-items:center;
-    width: 100%;
-    height: 130px;
-    background-color: rgb(3, 199, 90);
-    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.top-bar__menu{
-    margin-left: 20px;
-}
-.top-bar__cart{
-    margin-right: 20px;
-}
-
-.search-bar{
+.Big-div{
     background-color: white;
-    width: 95%;
-    height: 70px;
-    margin: -35px auto 1rem;
-    border-radius: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 800px;
+}
+
+.playlist{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+   margin-top:30px;
+   margin-right: 115px;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.main{    display: flex;
+    justify-content: space-around;
     align-items: center;
-    position: relative;
-}
-
-.search-bar input{
-    border:none;
-    margin-left: 30px;
-    opacity: 0.4;
-}
-
-.search-bar__search{
-    opacity: 0.3;
-    margin-right: 30px;
-}
-
-.book-of-the-day{
-    display: flex;
-    justify-content:space-between;
-    width: 65%;
-    margin:20px 0px 20px 20px;
+    margin-top:22px;
+    
 }
 
 
-
-.Book-of-the-day__1,.Book-of-the-day__2{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    margin:15px 0px 15px 0px;
-}
-
-h2{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-left: 20px;
-}
-h3{
-    font-size: 1.2rem;
-    font-weight: 600;
-    opacity: 0.8;
-    margin-bottom: 6px;
-}
-p{
-    margin-top: 30px;
-    margin-bottom: 70px;
-}
-.Book-of-the-day__추공{
-    opacity: 0.4;
-}
-
-.stars{
-    color: #fae100;
-    margin-top: 4px;
-}
-
-.Book-of-the-day__bookmark{
-    background-color: #fae100;
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Book-of-the-day__book-now{
-    background-color: black;
-    height: 30px;
+.main__thumbnail{
+    background-color: rgb(250, 184, 63);
     width: 100px;
-    border-radius: 5px;
-    color: white;
+    height: 100px;
+    border-radius: 10px;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-.Book-of-the-day__Journey,.Book-of-the-day__Biography{
-    background-color:rgb(246, 246, 246);
-    height: 30px;
-    width: 80px;
-    border-radius: 5px;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    margin-right: 10px;
+    border:3px solid black;
+    margin-right: 20px;
+
 }
 
-.Top-Adventures__list{
-    display: flex;
+.big-x{font-size: 20px;}
+
+.buttons{display: flex;
     justify-content:space-around;
-    margin: 20px 0px;
+    align-items: center;}
+
+.buttons__square{
+    background-color: white;
+    width: 120px;
+    height: 50px;
+    border:3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin:20px 0;
 }
 
-.Popular-authors__card{
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    margin: 30px 0px 0px;
+.play{
+    margin-right: 5px;
 }
+
+.song__item{display: flex;
+margin: 30px;}
+
+.song__text{margin-left:20px;
+}
+
+.buttons__one{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border:3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%
+}
+
+.song__orange{background-color: rgba(255, 94, 0, 0.863);
+width: 40px;
+height: 40px;
+border-radius:10px;
+border:3px solid black;}
+
+
+.song__pink{background-color: pink;
+width: 40px;
+height: 40px;
+border-radius:10px;
+border:3px solid black;}
+
+
+.song__blue{background-color: rgb(51, 51, 224);
+width: 40px;
+height: 40px;
+border-radius:10px;
+border:3px solid black;}
+
+
+.song__mint{background-color: rgb(56, 209, 132);
+width: 40px;
+height: 40px;
+border-radius:10px;
+border:3px solid black;}
