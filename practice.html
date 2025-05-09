@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/homework6.css" />
+    <meta charset="UTF-8" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="music-app">
+      <!-- 아티스트 프로필 -->
+      <div class="serach-bar">
+        <span class="serach-bar__back-button">
+          <i class="fa-solid fa-arrow-left"></i>
+        </span>
+        <span class="serach-bar__search"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></span>
+      </div>
+
+      <div class="artist-profile">
+        <img
+          src="screenshots/together.jpg"
+          alt="Tyler, The Creator"
+          class="artist-profile__image"
+        />
+        <h1 class="artist-profile__name">Anointing</h1>
+        <p id="text">ccm</p>
+      </div>
+
+      <div class="button__main">
+        <div class="button__Shuffle">Shuffle</div>
+        <div class="button__heart">
+          <i class="fa-solid fa-heart heart"></i>
+          <p id="text">212 971</p>
+        </div>
+      </div>
+
+      <div class="music-list">
+        <div class="music-list__track">
+          <img id="image" src="screenshots/어노인팅1.jpg" />
+          <p id="text">어노인팅</p>
+          <span>놀라운 주의 사랑</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div class="music-list__track playing">
+          <img id="image" src="screenshots/together.jpg" />
+          <p id="text">어노인팅</p>
+          <span>손잡고 함께가세</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div class="music-list__track">
+          <img id="image" src="screenshots/어노인팅2.jpg" />
+          <p id="text">어노인팅</p>
+          <span>우리가 꿈꾸는 나라</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div class="music-list__track">
+          <img id="image" src="screenshots/어노인팅3.jpg" />
+          <p id="text">어노인팅g</p>
+          <span>춤추는 세대</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+
+      <div class="mini-player">
+        <div class="mini-player__info">
+          <p id="text">어노인팅</p>
+          <span class="mini-player__title">손잡고 함께가세</span>
+        </div>
+        <div class="mini-player__controls">
+          <i class="fa-solid fa-backward fa-sm"></i>
+          <i class="fa-solid fa-pause fa-lg"></i>
+          <i class="fa-solid fa-forward fa-sm"></i>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/fa557d9724.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
